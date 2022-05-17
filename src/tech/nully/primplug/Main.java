@@ -15,6 +15,9 @@ import tech.nully.primplug.Talismans.talismanListeners;
 import tech.nully.primplug.Tools.bloodThirstyBlade;
 import tech.nully.primplug.Tools.toolAbilities;
 import tech.nully.primplug.Tools.zeusBolt;
+import tech.nully.primplug.crafting.customRecipes.armorRecipes;
+import tech.nully.primplug.crafting.overridenRecipes.overridenRecipeItems;
+import tech.nully.primplug.crafting.overridenRecipes.overridenRecipes;
 import tech.nully.primplug.enchantStuff.EnchantGUI;
 import tech.nully.primplug.enchantStuff.enchantMechanic;
 import tech.nully.primplug.enchantStuff.registerGlow;
@@ -45,11 +48,14 @@ public class Main extends JavaPlugin {
         lapisArmor.init();
         platedArmor.init();
         reaperArmor.init();
+        overridenRecipeItems.init();
 
         bloodThirstyBlade.makeBloodThirstyBlade();
         zeusBolt.createZeusBolt();
 
         registerGlow.registerGlow();
+
+        overridenRecipes.overrideRecipes();
 
         p.addMana();
         enchantMechanic.createEnchantHashMap();
@@ -57,6 +63,7 @@ public class Main extends JavaPlugin {
         
         
         // recipes
+        armorRecipes.init();
 
 
 

@@ -4,8 +4,6 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import tech.nully.primplug.fileSystem.file;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class getTalisman {

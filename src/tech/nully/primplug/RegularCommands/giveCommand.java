@@ -25,7 +25,6 @@ public class giveCommand implements CommandExecutor {
         // Petherite helmet
         Player p = (Player) sender;
         if (!args[0].equals(null)) {
-            // TODO: ADD THE REST OF THE NEW ITEMS IN HERE
             switch (args[0]) {
                 case "petheritehelm": p.getInventory().addItem(PetheriteSet.helm);
                 sender.sendMessage(

@@ -1,17 +1,18 @@
 package tech.nully.primplug.magic;
 
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
-import tech.nully.primplug.fileSystem.file;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import tech.nully.primplug.fileSystem.file;
 
 public class spellCastTrigger implements Listener {
 
